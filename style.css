@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  overflow: hidden;
 }
 
 .container{
@@ -16,6 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 1rem;
     z-index: 1;
     
@@ -23,31 +25,64 @@
 .text-area-container{
     width: 50%;
     height: 25%;
+    margin-bottom: 10px;
 }
 .text-area{
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     outline: none;
-    padding: 5px;
+    padding: 20px;
+    resize: none;
     border: none;
     background-color: rgb(255, 255, 255);
+    font-weight: lighter;
+    border-radius: 10px;
+    transition: all ease 0.2s;
+}
+.text-area:hover{
+    width: 100%;
+    height: 100%;
 }
 .options-holder{
     display: flex;
-    gap: 20%;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    width: 50%;
 }
 .convert-btn{
-    padding: 10px 15px;
+    padding: 5px 10px;
     background-color: rgb(255, 255, 255);
     font-size: 1rem;
-    font-weight: bold;
     cursor: pointer;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
 }
 .convert-btn:hover{
-    box-shadow: 5px 5px 5px black;
+    background-color: #4973ff;
+    color: white;
+    border: none;
+    transition: ease 0.4s;
+    padding: 7px 13px;
+    font-weight: bold;
 }
 h1{
     font-size: 40px;
+}
+select{
+    flex: 1;
+    color: white;
+    background-color: #484848;
+    height: 45px;
+    padding:0px 20px ;
+    outline: 0;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    appearance: menulist-button;
 }
 
 section {
